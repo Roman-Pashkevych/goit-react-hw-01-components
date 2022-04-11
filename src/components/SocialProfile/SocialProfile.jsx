@@ -1,4 +1,13 @@
 /* import PropTypes from "prop-types"; */
+import { Description } from './SocialProfile.styled';
+import { Name } from './SocialProfile.styled';
+import { P } from './SocialProfile.styled';
+import { Img } from './SocialProfile.styled';
+import { Ul } from './SocialProfile.styled';
+import { Profile } from './SocialProfile.styled';
+import { Li } from './SocialProfile.styled';
+import { SpanLabel } from './SocialProfile.styled';
+import { SpanQuantity } from './SocialProfile.styled';
 
 export default function SocialProfile({
   username,
@@ -8,28 +17,30 @@ export default function SocialProfile({
   stats,
 }) {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
-      </div>
+    <Profile>
+      {/* <div class="description"> */}
+      <Description>
+        <Img src={avatar} alt="User avatar" class="avatar" />
+        <Name class="name">{username}</Name>
+        <P class="tag">{tag}</P>
+        <P class="location">{location}</P>
+      </Description>
+      {/*  </div> */}
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Ul>
+        <Li>
+          <SpanLabel>Followers</SpanLabel>
+          <SpanQuantity>{stats.followers}</SpanQuantity>
+        </Li>
+        <Li>
+          <SpanLabel>Views</SpanLabel>
+          <SpanQuantity>{stats.views}</SpanQuantity>
+        </Li>
+        <Li>
+          <SpanLabel>Likes</SpanLabel>
+          <SpanQuantity>{stats.likes}</SpanQuantity>
+        </Li>
+      </Ul>
+    </Profile>
   );
 }

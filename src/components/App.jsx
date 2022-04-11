@@ -6,10 +6,11 @@ import friends from './FriendList/friends.json';
 import user from './SocialProfile/user.json';
 import data from './Statistics/data.json';
 import transactions from './TransactionHistory/transactions.json';
+import { PageStyled } from './App.styled';
 
 export const App = () => {
   return (
-    <>
+    <PageStyled>
       <SocialProfile
         username={user.username}
         tag={user.tag}
@@ -20,6 +21,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </>
+    </PageStyled>
   );
 };
