@@ -1,13 +1,15 @@
 /* import PropTypes from "prop-types"; */
-import { Description } from './SocialProfile.styled';
-import { Name } from './SocialProfile.styled';
-import { P } from './SocialProfile.styled';
-import { Img } from './SocialProfile.styled';
-import { Ul } from './SocialProfile.styled';
-import { Profile } from './SocialProfile.styled';
-import { Li } from './SocialProfile.styled';
-import { SpanLabel } from './SocialProfile.styled';
-import { SpanQuantity } from './SocialProfile.styled';
+import {
+  Description,
+  Name,
+  P,
+  Img,
+  Ul,
+  Profile,
+  Li,
+  SpanLabel,
+  SpanQuantity,
+} from './SocialProfile.styled';
 
 export default function SocialProfile({
   username,

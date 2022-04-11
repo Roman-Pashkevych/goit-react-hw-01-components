@@ -51,7 +51,6 @@ export const Li = styled.li`
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-right: 2px;
 `;
 
 export const SpanLabel = styled.span`
