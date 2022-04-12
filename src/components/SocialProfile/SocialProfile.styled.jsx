@@ -3,14 +3,12 @@ import styled from '@emotion/styled';
 export const Profile = styled.div`
   margin: auto;
   width: 500px;
-  padding: 10px;
 `;
 
 export const Description = styled.div`
   background-color: white;
   margin: auto;
   text-align: center;
-  width: 500px;
   padding-bottom: 10px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
@@ -43,8 +41,8 @@ export const Ul = styled.ul`
   padding: 25px;
   margin: 0;
   /* border: 1px solid black; */
-  border-bottom-left-radius: 4%;
-  border-bottom-right-radius: 4%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
 `;
 
 export const Li = styled.li`

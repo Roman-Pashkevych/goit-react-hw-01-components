@@ -20,14 +20,12 @@ export default function SocialProfile({
 }) {
   return (
     <Profile>
-      {/* <div class="description"> */}
       <Description>
         <Img src={avatar} alt="User avatar" class="avatar" />
         <Name class="name">{username}</Name>
         <P class="tag">{tag}</P>
         <P class="location">{location}</P>
       </Description>
-      {/*  </div> */}
 
       <Ul>
         <Li>
