@@ -21,10 +21,10 @@ export default function SocialProfile({
   return (
     <Profile>
       <Description>
-        <Img src={avatar} alt="User avatar" class="avatar" />
-        <Name class="name">{username}</Name>
-        <P class="tag">{tag}</P>
-        <P class="location">{location}</P>
+        <Img src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <P>{tag}</P>
+        <P>{location}</P>
       </Description>
 
       <Ul>

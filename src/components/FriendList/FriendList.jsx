@@ -6,9 +6,9 @@ export default function FriendList({ friends }) {
     <FriendListUl>
       {friends.map(({ id, isOnline, avatar, name }) => (
         <Li class="item" key={id}>
-          <Status class="status">{isOnline}</Status>
-          <Avatar class="avatar" src={avatar} alt="User avatar" width="48" />
-          <Name class="name">{name}</Name>
+          <Status>{isOnline}</Status>
+          <Avatar src={avatar} alt="User avatar" width="48" />
+          <Name>{name}</Name>
         </Li>
       ))}
     </FriendListUl>

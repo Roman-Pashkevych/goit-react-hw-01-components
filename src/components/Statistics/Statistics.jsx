@@ -10,14 +10,14 @@ import {
 
 export default function Statistics({ stats, title }) {
   return (
-    <SectionStatistics class="statistics">
-      {title && <H2 class="title">{title}</H2>}
+    <SectionStatistics>
+      {title && <H2>{title}</H2>}
 
       <Ul>
         {stats.map(({ id, label, percentage }) => (
-          <Li class="item" key={id}>
-            <SpanLabel class="label">{label}</SpanLabel>
-            <SpanPercentage class="percentage">{percentage}%</SpanPercentage>
+          <Li key={id}>
+            <SpanLabel>{label}</SpanLabel>
+            <SpanPercentage>{percentage}%</SpanPercentage>
           </Li>
         ))}
       </Ul>
